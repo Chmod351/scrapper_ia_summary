@@ -3,6 +3,8 @@ import { main } from '../../config/theme';
 import { mobile } from '../../config/responsive';
 import Sources from '../layout/Sources';
 import { sectionTitlesAndSubtitles } from '../layout/dummy.js';
+import TutorialContainer from '../layout/TutorialContainer';
+import Header from '../ui/Header';
 
 const Container = styled.div`
   display: flex;
@@ -20,13 +22,7 @@ const SourcesContainer = styled.div`
   margin: auto;
   ${mobile({ flexDirection: 'row', alignItems: 'center', flexWrap: 'wrap' })}
 `;
-const Title = styled.h1`
-  display: flex;
-  margin: auto;
-  justify-content: center;
-  margin-bottom: 2rem;
-  ${mobile({ fontSize: '6vw' })}
-`;
+
 const FormWrapper = styled.div`
   width: 20%;
   display: flex;
@@ -59,11 +55,16 @@ const Button = styled.button`
 `;
 
 const desc = 'use the keyword to get specific results';
+const title = 'Select yours Sources';
+const subtitle = `To get news, you must select yours sources.
+Do you want make a suggestion? please visit our Github!`;
+const tutorialTitle = `How it's Works?`;
+const tutorialDescription = `If is your  first time with our application we recommend you, read our guide`;
 const Demo = () => {
   return (
     <Container>
       <Wrapper>
-        <Title>Select yours Sources</Title>
+        <Header title={title} subtitle={subtitle} />
         <SourcesContainer>
           {sectionTitlesAndSubtitles.map((a) => {
             const { id, title, link, css } = a;
@@ -74,7 +75,8 @@ const Demo = () => {
             <Button>Start</Button>
           </FormWrapper>
         </SourcesContainer>
-
+        <Header title={tutorialTitle} subtitle={tutorialDescription} />
+        <TutorialContainer />
       </Wrapper>
     </Container>
   );

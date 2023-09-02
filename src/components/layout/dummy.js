@@ -45,16 +45,16 @@ export const tutorial = [
   {
     id: 1,
     img: first,
-    text: `By utilizing specific keywords, not only can you swiftly access related data stored in the database, but you can also enhance the efficiency of your scraping process. These keywords enable you to filter and refine the results obtained during the scraping process , ensuring that you accelerate result retrieval, filter out unnecessary information, and save valuable time.`,
+    text: `Select the sources of information from which you want to obtain the information you're looking for. Then, use a keyword to filter the information from those sources`,
   },
   {
     id: 2,
     img: second,
-    text: `By utilizing specific keywords, not only can you swiftly access related data stored in the database, but you can also enhance the efficiency of your scraping process. These keywords enable you to filter and refine the results obtained during the scraping process , ensuring that you accelerate result retrieval, filter out unnecessary information, and save valuable time.`,
+    text: `From the list of results you obtained, select the article you want to read to obtain a summary of its information`,
   },
   {
     id: 3,
     img: third,
-    text: `By utilizing specific keywords, not only can you swiftly access related data stored in the database, but you can also enhance the efficiency of your scraping process. These keywords enable you to filter and refine the results obtained during the scraping process , ensuring that you accelerate result retrieval, filter out unnecessary information, and save valuable time.`,
+    text: `We do not store information on how you use this application, but we do store the collected data and the keywords used in order to provide a better experience for all users`,
   },
 ];
