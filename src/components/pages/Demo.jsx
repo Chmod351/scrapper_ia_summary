@@ -17,7 +17,7 @@ const Wrapper = styled.div`
 `;
 const SourcesContainer = styled.div`
   display: flex;
-  margin: auto auto 40vh auto;
+  margin: auto;
   ${mobile({ flexDirection: 'column', alignItems: 'center' })}
 `;
 const Title = styled.h1`
@@ -34,7 +34,6 @@ const FormWrapper = styled.div`
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  margin-top: 2rem;
 `;
 const Input = styled.input`
   width: 50%;
@@ -60,16 +59,16 @@ const Demo = () => {
       <Wrapper>
         <Title>Select yours Sources</Title>
         <SourcesContainer>
-          <FormWrapper>
-            <Input placeholder="Use a keyword to filter results" />
-            <Button>Start</Button>
-          </FormWrapper>
           {sectionTitlesAndSubtitles.map((a) => {
             const { id, title, link, css } = a;
             return <Sources key={id} title={title} link={link} css={css} />;
           })}
+          <FormWrapper>
+            <Input placeholder="Keyword" />
+            <Button>Start</Button>
+          </FormWrapper>
         </SourcesContainer>
-        <h1> tutorial que desaparece cuando hay resultados del scrappeo </h1>
+      
       </Wrapper>
     </Container>
   );
