@@ -21,8 +21,18 @@ const Wrapper = styled.div`
 
 const Sources = ({ title, link }) => {
   const [selected, isSelected] = useState(false);
+  const handleClick = () => {
+    isSelected(!selected);
+    console.log(selected);
+  };
   return (
-    <Wrapper title={link} aria-label={link}>
+    <Wrapper
+      title={link}
+      aria-label={link}
+      onClick={() => {
+        handleClick();
+      }}
+    >
       {title}
     </Wrapper>
   );
