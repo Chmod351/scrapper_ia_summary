@@ -18,14 +18,14 @@ const Wrapper = styled.div`
 const SourcesContainer = styled.div`
   display: flex;
   margin: auto;
-${mobile({ flexDirection: 'row', alignItems: 'center' ,flexWrap:'wrap'})}
+  ${mobile({ flexDirection: 'row', alignItems: 'center', flexWrap: 'wrap' })}
 `;
 const Title = styled.h1`
   display: flex;
   margin: auto;
   justify-content: center;
   margin-bottom: 2rem;
-  ${mobile({ fontSize: '2rem' })}
+  ${mobile({ fontSize: '6vw' })}
 `;
 const FormWrapper = styled.div`
   width: 20%;
@@ -38,22 +38,27 @@ const FormWrapper = styled.div`
 `;
 const Input = styled.input`
   width: 50%;
-  height: 2.3rem;
-  border: none;
+  height: 0.5rem;
   outline: none;
-  border-bottom: 1px solid black;
+  border-radius: 5rem 0 0 5rem;
+  border: none;
+  padding: 1rem;
+  color: ${main.primaryFonts};
+  background-color: ${main.primaryResults};
   ${mobile({ width: '100%' })}
 `;
 const Button = styled.button`
   width: 5rem;
   height: 2.5rem;
   border: none;
-  border-top-right-radius: 5rem;
-  border-bottom-right-radius: 5rem;
+  border-radius: 0 5rem 5rem 0;
+  cursor: pointer;
   background-color: ${main.callToAction};
   font-weight: bold;
   ${mobile({ width: '5rem' })}
 `;
+
+const desc = 'use the keyword to get specific results';
 const Demo = () => {
   return (
     <Container>
@@ -65,7 +70,7 @@ const Demo = () => {
             return <Sources key={id} title={title} link={link} css={css} />;
           })}
           <FormWrapper>
-            <Input placeholder="Keyword" />
+            <Input placeholder="Keyword" title={desc} />
             <Button>Start</Button>
           </FormWrapper>
         </SourcesContainer>

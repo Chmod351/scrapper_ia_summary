@@ -15,12 +15,17 @@ const Wrapper = styled.div`
   justify-content: center;
   border-radius: 5rem;
   font-weight: bold;
+  cursor: pointer;
   ${mobile({ width: '49%', margin: '1rem auto' })}
 `;
 
-const Sources = ({ title }) => {
+const Sources = ({ title, link }) => {
   const [selected, isSelected] = useState(false);
-  return <Wrapper>{title}</Wrapper>;
+  return (
+    <Wrapper title={link} aria-label={link}>
+      {title}
+    </Wrapper>
+  );
 };
 
 export default Sources;
