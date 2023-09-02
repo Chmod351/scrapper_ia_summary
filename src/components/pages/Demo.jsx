@@ -18,7 +18,7 @@ const Wrapper = styled.div`
 const SourcesContainer = styled.div`
   display: flex;
   margin: auto;
-  ${mobile({ flexDirection: 'column', alignItems: 'center' })}
+${mobile({ flexDirection: 'row', alignItems: 'center' ,flexWrap:'wrap'})}
 `;
 const Title = styled.h1`
   display: flex;
@@ -28,12 +28,13 @@ const Title = styled.h1`
   ${mobile({ fontSize: '2rem' })}
 `;
 const FormWrapper = styled.div`
-  width: 20%%;
+  width: 20%;
   display: flex;
   margin: auto;
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  ${mobile({ width: '100%' })}
 `;
 const Input = styled.input`
   width: 50%;
@@ -41,7 +42,7 @@ const Input = styled.input`
   border: none;
   outline: none;
   border-bottom: 1px solid black;
-  ${mobile({ width: '80%' })}
+  ${mobile({ width: '100%' })}
 `;
 const Button = styled.button`
   width: 5rem;
@@ -68,7 +69,6 @@ const Demo = () => {
             <Button>Start</Button>
           </FormWrapper>
         </SourcesContainer>
-      
       </Wrapper>
     </Container>
   );

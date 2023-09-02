@@ -3,7 +3,6 @@ import { main } from '../../config/theme.js';
 import { useState } from 'react';
 import { mobile } from '../../config/responsive.js';
 
-
 const Wrapper = styled.div`
   display: flex;
   width: 15%;
@@ -16,7 +15,7 @@ const Wrapper = styled.div`
   justify-content: center;
   border-radius: 5rem;
   font-weight: bold;
-  ${mobile({ width: '100%', margin: '0.5rem' })}
+  ${mobile({ width: '49%', margin: '1rem auto' })}
 `;
 
 const Sources = ({ title }) => {
