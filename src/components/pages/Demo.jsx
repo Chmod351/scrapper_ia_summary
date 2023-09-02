@@ -8,7 +8,7 @@ import Header from '../ui/Header';
 
 const Container = styled.div`
   display: flex;
-  margin: auto;
+  margin: 0rem auto 5rem auto;
   justify-content: center;
   max-width: 1100px;
 `;

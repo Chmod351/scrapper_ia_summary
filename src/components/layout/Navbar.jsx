@@ -8,6 +8,7 @@ const Container = styled.nav`
   height: 70px;
   background-color: ${main.secondaryCallToAction};
   box-shadow: 0px 0px 8px rgba(99, 99, 99, 0.2);
+  position: fixed;
 `;
 const Wrapper = styled.div`
   max-width: 1100px;

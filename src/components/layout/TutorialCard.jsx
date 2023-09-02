@@ -11,7 +11,7 @@ const Container = styled.article`
   ${mobile({
     width: '90%',
     display: 'flex',
-    margin: 'auto',
+    margin: '0.5rem auto',
     alignItems: 'center',
   })}
 `;
@@ -26,6 +26,7 @@ const Image = styled.img`
 const Description = styled.p`
   margin-top: 2rem;
   color: ${main.primaryFonts};
+  ${mobile({ marginTop: '1rem', fontSize: '0.8rem' })}
 `;
 
 const TutorialCard = ({ text, img, index }) => {

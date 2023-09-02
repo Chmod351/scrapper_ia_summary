@@ -4,6 +4,7 @@ import { tutorial } from './dummy';
 import { mobile } from '../../config/responsive';
 
 const Container = styled.section`
+  margin-top: 2rem;
   max-width: 1100px;
 `;
 const Wrapper = styled.div`

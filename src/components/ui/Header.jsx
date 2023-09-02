@@ -11,7 +11,7 @@ const Subtitle = styled.p`
 `;
 const Wrapper = styled.div`
   display: flex;
-  margin: 2rem auto;
+  margin: 4rem auto;
   text-align: center;
   align-items: center;
   flex-direction: column;
