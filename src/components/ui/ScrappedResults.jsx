@@ -3,14 +3,10 @@ import { styled } from 'styled-components';
 const Container = styled.article``;
 const Wrapper = styled.div``;
 
-const ScrappedResults = () => {
+const ScrappedResults = ({ link }) => {
   return (
     <Container>
-      <Wrapper>
-        lajdlajdlajdlkajdlakjdlajd lkajlajd aldjaldjlkadjla alkdjalkdja
-        asdljaldjasldjalkdjalkdjaldja aldjaldj adj aldjaldjad l jaldjas ljdal
-        jadl aldjaldj
-      </Wrapper>
+      <Wrapper>{link}</Wrapper>
     </Container>
   );
 };

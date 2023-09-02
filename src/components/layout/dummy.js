@@ -58,3 +58,54 @@ export const tutorial = [
     text: `We do not store information on how you use this application, but we do store the collected data and the keywords used in order to provide a better experience for all users`,
   },
 ];
+
+export const temporalLinks = [
+  {
+    id: 1,
+    link: `https://www.lanacion.com.ar/politica/los-curas-de-las-villas-rechazan-los-ataques-de-javier-milei-a-francisco-y-haran-el-martes-una-misa-nid02092023/`,
+  },
+  {
+    id: 2,
+    link: `https://www.lanacion.com.ar/politica/los-curas-de-las-villas-rechazan-los-ataques-de-javier-milei-a-francisco-y-haran-el-martes-una-misa-nid02092023/`,
+  },
+  {
+    id: 3,
+    link: `https://www.lanacion.com.ar/politica/los-curas-de-las-villas-rechazan-los-ataques-de-javier-milei-a-francisco-y-haran-el-martes-una-misa-nid02092023/`,
+  },
+  {
+    id: 4,
+    link: `https://www.lanacion.com.ar/politica/los-curas-de-las-villas-rechazan-los-ataques-de-javier-milei-a-francisco-y-haran-el-martes-una-misa-nid02092023/`,
+  },
+  {
+    id: 5,
+    link: `https://www.lanacion.com.ar/politica/los-curas-de-las-villas-rechazan-los-ataques-de-javier-milei-a-francisco-y-haran-el-martes-una-misa-nid02092023/`,
+  },
+  {
+    id: 6,
+    link: `https://www.lanacion.com.ar/politica/los-curas-de-las-villas-rechazan-los-ataques-de-javier-milei-a-francisco-y-haran-el-martes-una-misa-nid02092023/`,
+  },
+  {
+    id: 7,
+    link: `https://www.lanacion.com.ar/politica/los-curas-de-las-villas-rechazan-los-ataques-de-javier-milei-a-francisco-y-haran-el-martes-una-misa-nid02092023/`,
+  },
+  {
+    id: 8,
+    link: `https://www.lanacion.com.ar/politica/los-curas-de-las-villas-rechazan-los-ataques-de-javier-milei-a-francisco-y-haran-el-martes-una-misa-nid02092023/`,
+  },
+  {
+    id: 9,
+    link: `https://www.lanacion.com.ar/politica/los-curas-de-las-villas-rechazan-los-ataques-de-javier-milei-a-francisco-y-haran-el-martes-una-misa-nid02092023/`,
+  },
+  {
+    id: 10,
+    link: `https://www.lanacion.com.ar/politica/los-curas-de-las-villas-rechazan-los-ataques-de-javier-milei-a-francisco-y-haran-el-martes-una-misa-nid02092023/`,
+  },
+  {
+    id: 11,
+    link: `https://www.lanacion.com.ar/politica/los-curas-de-las-villas-rechazan-los-ataques-de-javier-milei-a-francisco-y-haran-el-martes-una-misa-nid02092023/`,
+  },
+  {
+    id: 12,
+    link: `https://www.lanacion.com.ar/politica/los-curas-de-las-villas-rechazan-los-ataques-de-javier-milei-a-francisco-y-haran-el-martes-una-misa-nid02092023/`,
+  },
+];
