@@ -6,7 +6,8 @@ import { mobile } from '../../config/responsive.js';
 const Wrapper = styled.div`
   display: flex;
   width: 15%;
-  background-color: ${main.primary};
+  background-color: ${(props) =>
+    props.selected ? main.callToAction : main.primary};
   color: ${main.primaryBg};
   height: 2.5rem;
   margin: auto;
@@ -23,12 +24,12 @@ const Sources = ({ title, link }) => {
   const [selected, isSelected] = useState(false);
   const handleClick = () => {
     isSelected(!selected);
-    console.log(selected);
   };
   return (
     <Wrapper
       title={link}
       aria-label={link}
+      selected={selected}
       onClick={() => {
         handleClick();
       }}

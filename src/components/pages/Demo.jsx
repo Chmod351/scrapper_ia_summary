@@ -5,6 +5,8 @@ import Sources from '../layout/Sources';
 import { sectionTitlesAndSubtitles } from '../layout/dummy.js';
 import TutorialContainer from '../layout/TutorialContainer';
 import Header from '../ui/Header';
+import ScrappedInfoContainer from '../ui/ScrappedInfoContainer';
+import { useState } from 'react';
 
 const Container = styled.div`
   display: flex;
@@ -60,7 +62,14 @@ const subtitle = `To get news, you must select yours sources.
 Do you want make a suggestion? please visit our Github!`;
 const tutorialTitle = `How it's Works?`;
 const tutorialDescription = `If is your  first time with our application we recommend you, read our guide`;
+
 const Demo = () => {
+  const [info, setInfo] = useState(false);
+
+  const handleClick = (e) => {
+    e.preventDefault();
+    setInfo(!info);
+  };
   return (
     <Container>
       <Wrapper>
@@ -72,11 +81,17 @@ const Demo = () => {
           })}
           <FormWrapper>
             <Input placeholder="Keyword" title={desc} />
-            <Button>Start</Button>
+            <Button
+              onClick={(e) => {
+                handleClick(e);
+              }}
+            >
+              Start
+            </Button>
           </FormWrapper>
         </SourcesContainer>
         <Header title={tutorialTitle} subtitle={tutorialDescription} />
-        <TutorialContainer />
+        {info ? <ScrappedInfoContainer /> : <TutorialContainer />}
       </Wrapper>
     </Container>
   );
