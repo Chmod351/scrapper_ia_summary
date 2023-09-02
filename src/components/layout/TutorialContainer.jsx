@@ -3,10 +3,13 @@ import TutorialCard from './TutorialCard';
 import { tutorial } from './dummy';
 import { mobile } from '../../config/responsive';
 
-const Container = styled.section``;
-const Wrapper = styled.div`
+const Container = styled.section`
   max-width: 1100px;
+`;
+const Wrapper = styled.div`
+  width: 100%;
   display: flex;
+  justify-content: space-evenly;
   flex-direction: row;
   margin: auto;
   ${mobile({ flexDirection: 'column' })}
