@@ -1,3 +1,6 @@
+import first from '../../assets/illustration-features-tab-1.svg';
+import second from '../../assets/illustration-features-tab-2.svg';
+import third from '../../assets/illustration-features-tab-3.svg';
 export const links = [
   {
     id: 1,
@@ -35,5 +38,23 @@ export const sectionTitlesAndSubtitles = [
     title: 'Perfil',
     link: 'https://www.perfil.com',
     css: '.headline-title',
+  },
+];
+
+export const tutorial = [
+  {
+    id: 1,
+    img: first,
+    text: `By utilizing specific keywords, not only can you swiftly access related data stored in the database, but you can also enhance the efficiency of your scraping process. These keywords enable you to filter and refine the results obtained during the scraping process , ensuring that you accelerate result retrieval, filter out unnecessary information, and save valuable time.`,
+  },
+  {
+    id: 2,
+    img: second,
+    text: `By utilizing specific keywords, not only can you swiftly access related data stored in the database, but you can also enhance the efficiency of your scraping process. These keywords enable you to filter and refine the results obtained during the scraping process , ensuring that you accelerate result retrieval, filter out unnecessary information, and save valuable time.`,
+  },
+  {
+    id: 3,
+    img: third,
+    text: `By utilizing specific keywords, not only can you swiftly access related data stored in the database, but you can also enhance the efficiency of your scraping process. These keywords enable you to filter and refine the results obtained during the scraping process , ensuring that you accelerate result retrieval, filter out unnecessary information, and save valuable time.`,
   },
 ];
