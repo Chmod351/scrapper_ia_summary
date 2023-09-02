@@ -1,10 +1,14 @@
 import { styled } from 'styled-components';
 import { mobile } from '../../config/responsive.js';
+import { main } from '../../config/theme.js';
 
 const Title = styled.h1`
+  color: ${main.secondaryCallToAction};
   ${mobile({ fontSize: '6vw' })}
 `;
-const Subtitle = styled.p``;
+const Subtitle = styled.p`
+  color: ${main.primaryFonts};
+`;
 const Wrapper = styled.div`
   display: flex;
   margin: 2rem auto;

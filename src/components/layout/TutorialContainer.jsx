@@ -18,7 +18,7 @@ const TutorialContainer = () => {
       <Wrapper>
         {tutorial.map((t) => {
           const { id, text, img } = t;
-          return <TutorialCard key={id} text={text} img={img} />;
+          return <TutorialCard key={id} text={text} img={img} index={id} />;
         })}
       </Wrapper>
     </Container>

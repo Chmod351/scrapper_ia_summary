@@ -45,7 +45,7 @@ export const tutorial = [
   {
     id: 1,
     img: first,
-    text: `Select the sources of information from which you want to obtain the information you're looking for. Then, use a keyword to filter the information from those sources`,
+    text: `Select the sources of information from which you want to obtain the information you're looking for. Then, use a keyword to filter the information from those sources, then press START`,
   },
   {
     id: 2,

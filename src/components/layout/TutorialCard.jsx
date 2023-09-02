@@ -4,10 +4,9 @@ import { mobile } from '../../config/responsive';
 
 const Container = styled.article`
   width: 30%;
-  max-height: 30rem;
-  margin: auto;
+  height: 25rem;
   box-shadow: 0 3px 6px ${main.secondaryBg};
-  padding: 2.5rem 0;
+  padding: 0.5rem;
   border-radius: 12px;
   ${mobile({
     width: '90%',
@@ -20,13 +19,19 @@ const Wrapper = styled.div`
   width: 100%;
 `;
 const Image = styled.img`
-  width: 100%;
+  height: 16rem;
+  max-width: 100%;
+  object-fit: fit;
 `;
-const Description = styled.p``;
+const Description = styled.p`
+  margin-top: 2rem;
+  color: ${main.primaryFonts};
+`;
 
-const TutorialCard = ({ text, img }) => {
+const TutorialCard = ({ text, img, index }) => {
+  const marginTopInRem = index * 2;
   return (
-    <Container>
+    <Container style={{ marginTop: `${marginTopInRem}rem` }}>
       <Wrapper>
         <Image src={img} />
         <Description>{text}</Description>
