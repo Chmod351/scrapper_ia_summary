@@ -20,11 +20,15 @@ const Mobile = styled.div`
 `;
 
 const Wrapper = styled.div`
-  max-width: 70%;
+  max-width: 60%;
+  max-height: 80vh;
+  overflow: scroll;
   ${mobile({ maxWidth: '100%' })}
 `;
 const Related = styled.aside`
-  max-width: 30%;
+  max-width: 40%;
+  max-height: 80vh;
+  overflow: scroll;
   ${mobile({ maxWidth: '100%' })}
 `;
 const Options = styled.div`
